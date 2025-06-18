@@ -14,7 +14,7 @@ Cria uma máquina Fedora 41 provisionada automaticamente com ZSH, TMUX, fontes N
 ```bash
 git clone https://github.com/thiagobotelho/devops-lab-vagrant.git
 cd devops-lab-vagrant
-vagrant up --provider=libvirt  # ou --provider=virtualbox
+vagrant up
 ```
 
 Após o provisionamento:
