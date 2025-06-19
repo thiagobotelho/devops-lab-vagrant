@@ -5,7 +5,6 @@ Vagrant.configure("2") do |config|
   config.vm.provider :libvirt do |libvirt|
     libvirt.memory = 2048
     libvirt.cpus = 2
-    libvirt.storage :file, size: "20G"
   end
 
   config.vm.synced_folder ".", "/vagrant", type: "rsync"
