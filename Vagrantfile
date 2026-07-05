@@ -1,5 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "fedora/41-cloud-base"
+  config.vm.box = "fedora/44-cloud-base"
   config.vm.hostname = "terminal-test"
 
   config.vm.provider :libvirt do |libvirt|
@@ -15,5 +15,6 @@ Vagrant.configure("2") do |config|
       git clone https://github.com/thiagobotelho/terminal-config.git /home/vagrant/terminal-config
       chown -R vagrant:vagrant /home/vagrant/terminal-config
     fi
+    sudo -u vagrant python3 /home/vagrant/terminal-config/install.py --profile core
   SHELL
 end

@@ -2,12 +2,15 @@
 
 Ambiente de laboratório com Vagrant para testar o setup DevOps.
 
-Cria uma máquina Fedora 41 provisionada automaticamente com ZSH, TMUX, fontes Nerd Font e personalizações do repositório [`terminal-config`](https://github.com/thiagobotelho/terminal-config). Também pode ser utilizado para experimentar e validar outras ferramentas e configurações relacionadas a infraestrutura e produtividade em terminal.
+Cria uma máquina Fedora 44 com libvirt e aplica automaticamente o perfil
+`core` do repositório
+[`terminal-config`](https://github.com/thiagobotelho/terminal-config).
 
 ## 🔧 Requisitos
 
 - [Vagrant](https://www.vagrantup.com/)
-- [VirtualBox](https://www.virtualbox.org/) ou [libvirt](https://vagrant-libvirt.github.io/)
+- [libvirt/KVM](https://vagrant-libvirt.github.io/)
+- plugin `vagrant-libvirt`
 
 ## 🚀 Como usar
 
@@ -27,7 +30,7 @@ python3 install.py
 
 ## 📦 Conteúdo
 
-- Fedora 41 Cloud Base
+- Fedora 44 Cloud Base
 - Instalação automatizada de ZSH, Oh-My-Zsh, Powerlevel10k
 - TMUX com TPM e plugins customizados
 - Nerd Fonts localmente aplicadas
