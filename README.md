@@ -35,3 +35,11 @@ python3 install.py
 - TMUX com TPM e plugins customizados
 - Nerd Fonts localmente aplicadas
 - Estrutura pronta para testes e validações de ambiente terminal DevOps
+
+## Aprender a configuração
+
+Consulte o [guia comentado](docs/APRENDIZADO.md) para entender componentes, escolhas, testes positivos/negativos e reversão.
+
+## Fixar a versão da box
+
+Selecione no catálogo oficial da box uma versão existente com provider libvirt e defina VAGRANT_BOX_VERSION antes de vagrant validate/up. O provisionamento bloqueia sem essa escolha, evitando resolver silenciosamente uma versão móvel. O nome da box e a versão devem existir no catálogo; ruby -c valida apenas a sintaxe e não comprova disponibilidade do download. Para atualizar, revise a versão e teste em uma VM descartável.
